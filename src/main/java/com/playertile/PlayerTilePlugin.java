@@ -11,7 +11,8 @@ import net.runelite.client.ui.overlay.OverlayManager;
 
 @Slf4j
 @PluginDescriptor(
-	name = "Player Tile"
+		name = "Player Tile",
+		description = "Display Server tile of the players exact location"
 )
 public class PlayerTilePlugin extends Plugin
 {
