@@ -42,6 +42,10 @@ public class PlayerTileOverlay extends Overlay
     private void drawTile(Graphics2D graphics, Color color, int outlineAlpha, int fillAlpha)
     {
 
+        if(plugin.inBlockedRegion || plugin.inPVPWorld)
+            return;
+        //prevent abuse of the plugin.
+
         if(outlineAlpha == 0 && fillAlpha == 0)
             return;
         //neither an outline or fill specified
