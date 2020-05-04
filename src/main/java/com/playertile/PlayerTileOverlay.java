@@ -24,7 +24,7 @@ public class PlayerTileOverlay extends Overlay
     PlayerTileOverlay(Client client, PlayerTilePlugin plugin, PlayerTileConfig config)
     {
         setPosition(OverlayPosition.DYNAMIC);
-        setLayer(OverlayLayer.ABOVE_WIDGETS);
+        setLayer(OverlayLayer.ABOVE_SCENE);
         this.client = client;
         this.plugin = plugin;
         this.config = config;
